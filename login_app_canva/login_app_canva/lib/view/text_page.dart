@@ -6,17 +6,24 @@ class TextPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         Text(
           'Crie designs para tudo.\nPublique onde quiser.',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontWeight: FontWeight.w900, fontSize: 30, letterSpacing: 0.2),
         ),
         SizedBox(
-          height: 12,
+          height: 15,
         ),
         Text(
-          'Não importa se você é um design\nexperiente ou amador,nem se trabalha\n sozinho ou em equipe - você vai adorar\no Canva.',
-          style: TextStyle(fontWeight: FontWeight.w600),
+          'Não importa se você é um designer\nexperiente ou amador, nem se trabalha\nsozinho ou em equipe - você vai adorar\no Canva.',
+          style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 17.8,
+              letterSpacing: .2,
+              color: Colors.black54),
         )
       ],
     );

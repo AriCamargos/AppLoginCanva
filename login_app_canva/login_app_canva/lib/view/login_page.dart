@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:login_app_canva/view/buttons_action.dart';
+import 'package:login_app_canva/view/logo_page.dart';
+import 'package:login_app_canva/view/text_link.dart';
 import 'package:login_app_canva/view/text_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -7,32 +10,32 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        padding: const EdgeInsets.fromLTRB(30, 50, 30, 50),
-        child: Stack(
-          children: [
-            Container(
-              width: 60,
-              height: 60,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Color(0xFF00c4cc),
-              ),
+      body: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.fromLTRB(30, 50, 30, 50),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                LogoPage(),
+                SizedBox(
+                  height: 45,
+                ),
+                TextPage(),
+                SizedBox(
+                  height: 160,
+                ),
+                ButtonsAction(),
+                SizedBox(
+                  height: 10,
+                ),
+                TextLink(),
+              ],
             ),
-            const Positioned(
-              child: Text(
-                'Canva',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Cookie',
-                    fontSize: 25,
-                    fontWeight: FontWeight.normal),
-              ),
-              bottom: 17,
-              right: 6,
-            ),
-          ],
-        ),
+          ),
+          // ignore: prefer_const_constructors
+        ],
       ),
     );
   }
