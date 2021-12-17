@@ -1,6 +1,5 @@
 # AppLoginCanva
-Esse projeto foi realizado com a finalidade de fazer a releitura da Página de Login do Aplicativo Canva.
-Conceitos de Layout de Construção em Flutter com a releitura que eu fiz da Página de Login do Canva 🤓 
+Esse projeto foi realizado com a finalidade de fazer a releitura da Página de Login do Aplicativo Canva com conceitos de Layout de Construção em Flutter 🤓 
 Aqui tem alguns conceito de widgets, alignments, buttons, fonts e principalmente de herança ❣️
 
 Obs: só não consegui deixar idêntico porque o Canva não disponibiliza as suas próprias Fonts 😢
